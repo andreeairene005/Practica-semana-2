@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: "Times New Roman", serif;
+  background-color: #ffffff;
+}
+
+/* 1. Título con línea inferior de 5px negra */
+header {
+  background-color: #c8c9e0;
+  border-bottom: 5px solid black;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  padding: 8px 0;
+  font-size: 28px;
+}
+
+/* 2 y 3. Imagen a la derecha, separada 60px */
+main img {
+  float: right;
+  margin-right: 60px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 3px solid black;
+  max-width: 55%;
+}
+
+/* Párrafos */
+main p {
+  clear: both;                 /* empiezan debajo de la imagen */
+  box-sizing: border-box;
+  width: 90%;                  /* 10. ocupan el 90% de la ventana */
+  margin: 0 auto;
+  padding: 10px;               /* 11. separación de 10px */
+  text-indent: 40px;           /* 9. sangría de 40px */
+  text-align: justify;
+  background-color: #d0d0ec;
+  border: 3px dashed #333;
+  box-shadow: 8px 8px 10px gray;   /* 5. sombras */
+}
+
+/* 4 y 12. Primer párrafo */
+main p:first-of-type {
+  border-radius: 30px 30px 0 0;
+  background-image: url("images/fondoParrafo.png");
+  background-repeat: repeat;
+}
+
+/* 8. Último párrafo */
+main p:last-of-type {
+  border-radius: 0 0 30px 30px;
+}
+
+/* Menú */
+nav {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* 7. Línea roja de 5px a la izquierda */
+nav a {
+  border-left: 5px solid red;
+  padding-left: 5px;
+  margin-right: 10px;
+  color: #3b3a6e;
+  text-decoration: none;
+}
+
+/* 13. Subrayado rojo al pasar el ratón */
+nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+/* 6. Pie con línea superior de 5px negra */
+footer {
+  background-color: #3b3a6e;
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  border-top: 5px solid black;
+}
+
